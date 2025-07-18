@@ -52,12 +52,17 @@ class _SellersignupState extends State<Sellersignup> {
                 _buildTextField("Phone"),
                 const SizedBox(height: 15),
                 OutlinedButton(
-                  
                   onPressed: () {},
                   child: Text(
                     "Submit",
                     style: TextStyle(color: const Color.fromARGB(255, 0, 0, 0)),
                   ),
+                ),
+                TextButton(
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                  child: Text("Back"),
                 ),
               ],
             ),
