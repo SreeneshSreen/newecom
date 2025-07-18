@@ -51,13 +51,42 @@ class _SellersignupState extends State<Sellersignup> {
                 _buildTextField("Email"),
                 _buildTextField("Phone"),
                 const SizedBox(height: 15),
-                OutlinedButton(
-                  onPressed: () {},
-                  child: Text(
-                    "Submit",
-                    style: TextStyle(color: const Color.fromARGB(255, 0, 0, 0)),
+
+                SizedBox(
+                  width: 250,
+                  child: OutlinedButton(
+                    onPressed: () {},
+                    style: OutlinedButton.styleFrom(
+                      backgroundColor: const Color.fromARGB(
+                        255,
+                        73,
+                        165,
+                        239,
+                      ), // 🔵 Fill color
+                      foregroundColor: const Color.fromARGB(
+                        255,
+                        19,
+                        3,
+                        139,
+                      ), // ⚪ Text & icon color
+                      side: const BorderSide(
+                        color: Colors.blue,
+                      ), // Optional: border color
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(
+                          8,
+                        ), // Optional: rounded corners
+                      ),
+                    ),
+                    child: Text(
+                      "Sign Up",
+                      style: TextStyle(
+                        color: const Color.fromARGB(255, 255, 255, 255),
+                      ),
+                    ),
                   ),
                 ),
+
                 TextButton(
                   onPressed: () {
                     Navigator.pop(context);
